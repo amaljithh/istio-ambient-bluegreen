@@ -35,5 +35,5 @@ spec:
       previewService: rollout-ngnix-preview
       autopromotionEnabled: false
   selector:
-    matchlabels:
+    matchLabels:
       app: nginx
