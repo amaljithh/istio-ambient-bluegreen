@@ -1,0 +1,16 @@
+apiversion: gateway.networkign.k8s.io/v1beta1
+kind: HTTPRoute
+metadata:
+  name: my-httproute
+  namespace: myapp-ns
+spec:
+  parentRefs:
+    - name: my-gateway
+  rules:
+    - matches:
+        - path:
+            type: PathPrefix
+            value: /
+      backendRefs:
+        - name: rollout-nginx-active
+          port: 80
