@@ -27,6 +27,9 @@ spec:
       activeService: rollout-ngnix-active
       previewService: rollout-ngnix-preview
       autopromotionEnabled: false
+      steps:
+        - setWeight: 20
+        - pause: {}
   selector:
     matchLabels:
       app: nginx
