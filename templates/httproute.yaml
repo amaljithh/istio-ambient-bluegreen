@@ -14,3 +14,7 @@ spec:
       backendRefs:
         - name: rollout-ngnix-active
           port: 80
+          weight: 100
+        - name: rollout-ngnix-preview
+          port: 80
+          weight: 0
