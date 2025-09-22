@@ -1,7 +1,7 @@
 replicaCount: 3
 
 image:
-  repository: amaljithh/green-page
+  repository: amaljithh/blue-page
   tag: "latest"
   pullPolicy: IfNotPresent
 
