@@ -26,7 +26,7 @@ spec:
     blueGreen:
       activeService: rollout-ngnix-active
       previewService: rollout-ngnix-preview
-      autoPromotionEnabled: false
+      AutoPromotionEnabled: false
   selector:
     matchLabels:
       app: nginx
